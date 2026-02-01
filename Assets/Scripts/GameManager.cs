@@ -21,10 +21,13 @@ public class GameManager : MonoBehaviour
     public int currentScenarioNum = 0;
     public bool isLose = false;
     public bool hasCompletedAScenario = false;
+
     //Refs
     public GameObject[] scenarios;
     private GameObject currentlyLoadedScenario;
     public GameObject winScreen;
+    public AudioSource victoryAudio;
+    public AudioSource musicSource;
 
     void Start()
     {
@@ -83,11 +86,12 @@ public class GameManager : MonoBehaviour
         if(isLose)
         {
             //Toggle loss screen on
+        } else
+        {
+            musicSource.Stop();
+            victoryAudio.Play();
+            yield return new WaitUntil(() => Input.anyKey);
         }
-
-        //wait for user input
-
-        // yield return new WaitUntil(() => Input.anyKey);
 
         //Back to menu
         SceneManager.LoadScene(0);
@@ -125,7 +129,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator MoveScenarioIn()
     {
-        yield return new WaitForSeconds(0.25f);
+        if (currentScenarioNum != 0)
+        {
+            yield return new WaitForSeconds(0.25f);
+        }
 
         //Lerp it up
         Transform trans = scenarios[currentScenarioNum].transform;
