@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    //INSTANCE
+    private static GameManager instance;
+    public GameManager Instance
+    {
+        get { return instance; }
+        private set { instance = value; }
+    }
+
     //Parameters
     int numScenarios = 3;
 
@@ -19,12 +27,20 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    private void DespawnScenario()
+    IEnumerator DespawnScenario()
     {
         //despawn that bit
+        yield return null;
     }
 
     private void SpawnNextScenario()
