@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     //Refs
     public GameObject[] scenarios;
     private GameObject currentlyLoadedScenario;
+    public GameObject winScreen;
 
     void Start()
     {
@@ -73,15 +74,14 @@ public class GameManager : MonoBehaviour
 
     IEnumerator EndSequence()
     {
+        if (!isLose)
+            winScreen.SetActive(true);
+
         yield return new WaitForSeconds(3);
         //Spawn proper ending
         if(isLose)
         {
             //Toggle loss screen on
-        }
-        else
-        {
-            //Toggle win screen on
         }
 
         //wait for user input

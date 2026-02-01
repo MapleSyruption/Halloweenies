@@ -41,7 +41,10 @@ public class WeenieController : MonoBehaviour
     public void SelectWeenie()
     {
         hoverHand.GetComponent<SpriteRenderer>().sprite = choseHandSprite;
-        if(info.isGuilty)
+        hoverHand.transform.position = new Vector3(hoverHand.transform.position.x, hoverHand.transform.position.y + .4f, hoverHand.transform.position.z);
+
+        speechBubble.SetActive(false);
+        if (info.isGuilty)
         {
             aSource.clip = clipGood;
             GameManager.Instance.Win();

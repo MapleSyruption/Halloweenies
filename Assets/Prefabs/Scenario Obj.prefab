@@ -204,6 +204,11 @@ PrefabInstance:
       propertyPath: speechBubbleTail
       value: 
       objectReference: {fileID: 9171729396664427107}
+    - target: {fileID: 4297967266846188261, guid: 2c580eb7c73093142a4f89312e146f91,
+        type: 3}
+      propertyPath: m_text
+      value: E
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c580eb7c73093142a4f89312e146f91, type: 3}
 --- !u!1 &1277945630871894614 stripped
@@ -306,6 +311,11 @@ PrefabInstance:
       propertyPath: speechBubbleTail
       value: 
       objectReference: {fileID: 3681221393823052714}
+    - target: {fileID: 4297967266846188261, guid: 2c580eb7c73093142a4f89312e146f91,
+        type: 3}
+      propertyPath: m_text
+      value: A
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c580eb7c73093142a4f89312e146f91, type: 3}
 --- !u!1 &2126207660884255101 stripped
@@ -553,6 +563,11 @@ PrefabInstance:
       propertyPath: speechBubbleTail
       value: 
       objectReference: {fileID: 3491673162402757866}
+    - target: {fileID: 4297967266846188261, guid: 2c580eb7c73093142a4f89312e146f91,
+        type: 3}
+      propertyPath: m_text
+      value: F
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c580eb7c73093142a4f89312e146f91, type: 3}
 --- !u!1 &5147012481010314225 stripped
@@ -655,6 +670,11 @@ PrefabInstance:
       propertyPath: speechBubbleTail
       value: 
       objectReference: {fileID: 6785223442780585424}
+    - target: {fileID: 4297967266846188261, guid: 2c580eb7c73093142a4f89312e146f91,
+        type: 3}
+      propertyPath: m_text
+      value: B
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c580eb7c73093142a4f89312e146f91, type: 3}
 --- !u!1 &6158518103242199840 stripped
@@ -1029,6 +1049,11 @@ PrefabInstance:
       propertyPath: speechBubbleTail
       value: 
       objectReference: {fileID: 3061131625908407143}
+    - target: {fileID: 4297967266846188261, guid: 2c580eb7c73093142a4f89312e146f91,
+        type: 3}
+      propertyPath: m_text
+      value: C
+      objectReference: {fileID: 0}
     - target: {fileID: 6327664857058644759, guid: 2c580eb7c73093142a4f89312e146f91,
         type: 3}
       propertyPath: m_IsActive
