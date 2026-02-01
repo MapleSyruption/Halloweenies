@@ -73,6 +73,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 18c1c21501ee4744d833250465765d3a,
         type: 2}
+    - target: {fileID: 2884901067657275243, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_text
+      value: The weenie with the most pets egged your car!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884901067657275243, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 33.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884901067657275243, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 33.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3436934058389478834, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: info
