@@ -49,9 +49,10 @@ public class GameManager : MonoBehaviour
     {
         if(currentScenarioNum < numScenarios)
         {
-            scenarios[currentScenarioNum].SetActive(true);
-            //spawn that bit
-            //set currentScenario var
+            
+
+            //Lerp it into view x=18
+            StartCoroutine(MoveScenarioIn());
         }
         else
         {
@@ -98,10 +99,59 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
+        //Lerp it down
+        Transform trans = scenarios[currentScenarioNum].transform;
+        Vector3 initPos = trans.position;
+        Vector3 newPos = new Vector3(18f, initPos.y, initPos.z);
+        float duration = 1f;
+        float timePassed = 0f;
+
+        trans.position = newPos;
+        scenarios[currentScenarioNum].SetActive(true);
+
+        while (timePassed < duration)
+        {
+            timePassed += Time.deltaTime;
+            trans.position = Vector3.Lerp(initPos, newPos, timePassed);
+            yield return new WaitForFixedUpdate();
+        }
+
         scenarios[currentScenarioNum].SetActive(false);
         currentScenarioNum += 1;
         SpawnNextScenario();
         hasCompletedAScenario = false;
 
+    }
+
+    IEnumerator MoveScenarioIn()
+    {
+        yield return new WaitForSeconds(0.25f);
+
+        //Lerp it up
+        Transform trans = scenarios[currentScenarioNum].transform;
+        Vector3 initPos = trans.position;
+        Vector3 newPos = new Vector3(18f, initPos.y, initPos.z);
+        float duration = 1f;
+        float timePassed = 0f;
+
+        trans.position = newPos;
+        scenarios[currentScenarioNum].SetActive(true);
+
+        while (timePassed < duration)
+        {
+            timePassed += Time.deltaTime;
+            trans.position = Vector3.Lerp(newPos, initPos - new Vector3(1f,0f,0f), timePassed);
+            yield return new WaitForFixedUpdate();
+        }
+
+        timePassed = 0f;
+        duration = 0.1f;
+        while (timePassed < duration)
+        {
+            float t = timePassed / duration;
+            timePassed += Time.deltaTime;
+            trans.position = Vector3.Lerp(initPos - new Vector3(1f, 0f, 0f), initPos, t);
+            yield return new WaitForFixedUpdate();
+        }
     }
 }
