@@ -14,6 +14,9 @@ public class Hoverer : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance.hasCompletedAScenario)
+            return;
+
         HitScan();
 
         if(lastHovered != hovered)
@@ -24,7 +27,8 @@ public class Hoverer : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-            hovered.GetComponent<WeenieController>()?.SelectWeenie();
+            if (hovered)
+                hovered.GetComponent<WeenieController>()?.SelectWeenie();
         }
 
         lastHovered = hovered;

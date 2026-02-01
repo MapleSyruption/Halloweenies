@@ -42,10 +42,12 @@ public class WeenieController : MonoBehaviour
         if(info.isGuilty)
         {
             aSource.clip = clipGood;
+            GameManager.Instance.Win();
         }
         else
         {
             aSource.clip = clipBad;
+            GameManager.Instance.Lose();
         }
 
         aSource.Play();

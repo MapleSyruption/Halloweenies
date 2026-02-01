@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     //INSTANCE
     private static GameManager instance;
-    public GameManager Instance
+    public static GameManager Instance
     {
         get { return instance; }
         private set { instance = value; }
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     //Variables
     public int currentScenarioNum = 0;
     public bool isLose = false;
-
+    public bool hasCompletedAScenario = false;
     //Refs
     public GameObject[] scenarios;
     private GameObject currentlyLoadedScenario;
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         if(Instance == null)
         {
             Instance = this;
+            SpawnNextScenario();
         }
         else
         {
@@ -45,8 +46,9 @@ public class GameManager : MonoBehaviour
 
     private void SpawnNextScenario()
     {
-        if(currentScenarioNum < numScenarios - 1)
+        if(currentScenarioNum < numScenarios)
         {
+            scenarios[currentScenarioNum].SetActive(true);
             //spawn that bit
             //set currentScenario var
         }
@@ -56,15 +58,22 @@ public class GameManager : MonoBehaviour
             StartCoroutine("EndSequence");
         }
     }
+    public void Win()
+    {
+        hasCompletedAScenario = true;
+        StartCoroutine("CelebrateSequence");
+    }
 
     public void Lose()
     {
+        hasCompletedAScenario = true;
         isLose = true;
         StartCoroutine("EndSequence");
     }
 
     IEnumerator EndSequence()
     {
+        yield return new WaitForSeconds(3);
         //Spawn proper ending
         if(isLose)
         {
@@ -82,5 +91,16 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
 
         yield return null;
+    }
+
+    IEnumerator CelebrateSequence()
+    {
+        yield return new WaitForSeconds(3);
+
+        scenarios[currentScenarioNum].SetActive(false);
+        currentScenarioNum += 1;
+        SpawnNextScenario();
+        hasCompletedAScenario = false;
+
     }
 }
