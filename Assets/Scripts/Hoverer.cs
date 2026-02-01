@@ -16,12 +16,10 @@ public class Hoverer : MonoBehaviour
     {
         HitScan();
 
-        Debug.Log("Hovering: " + hovered);
-
         if(lastHovered != hovered)
         {
-            hovered.GetComponent<WeenieController>()?.SetHoverStatus(true);
-            lastHovered.GetComponent<WeenieController>()?.SetHoverStatus(true);
+            if (lastHovered != null) { lastHovered.GetComponent<WeenieController>()?.SetHoverStatus(false); }
+            if (hovered != null) { hovered.GetComponent<WeenieController>()?.SetHoverStatus(true); }
         }
 
         if(Input.GetMouseButtonDown(0))
@@ -50,6 +48,6 @@ public class Hoverer : MonoBehaviour
             hovered = null;
         }
 
-        Debug.DrawRay(r.origin, r.direction * 100, Color.yellow, 1f);
+        //Debug.DrawRay(r.origin, r.direction * 100, Color.yellow, 1f);
     }
 }

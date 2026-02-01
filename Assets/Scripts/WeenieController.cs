@@ -30,7 +30,7 @@ public class WeenieController : MonoBehaviour
     public void SetHoverStatus(bool _isHovered)
     {
         speechBubble.SetActive(_isHovered);
-        speechBubble.GetComponent<TMP_Text>().text = info.weenieStatement;
+        speechBubble.GetComponentInChildren<TMP_Text>().text = info.weenieStatement;
 
         speechBubbleTail.SetActive(_isHovered);
 
@@ -39,7 +39,6 @@ public class WeenieController : MonoBehaviour
 
     public void SelectWeenie()
     {
-        Debug.Log("Weenie down");
         if(info.isGuilty)
         {
             aSource.clip = clipGood;
