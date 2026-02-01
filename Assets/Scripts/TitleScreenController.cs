@@ -8,6 +8,12 @@ public class TitleScreenController : MonoBehaviour
 {
     public Animator titleScreenAnimator;
     public bool actuallyStartGame;
+    public GameObject[] objectss;
+
+    private void Start()
+    {
+        objectss[Random.Range(0,5)].SetActive(true);
+    }
     public void StartGame()
     {
         titleScreenAnimator.SetTrigger("Start Game");
