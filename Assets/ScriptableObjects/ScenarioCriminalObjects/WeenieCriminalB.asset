@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: db1cd0c5ff6b3a643936ad724c3fdcbb, type: 3}
   m_Name: WeenieCriminalB
   m_EditorClassIdentifier: Assembly-CSharp::WeenieInfo
-  weenieStatement: I know C has extinguished the life of at least 2 weenies
+  weenieStatement: C has extinguished the life of at least 2 weenies
   isGuilty: 0
