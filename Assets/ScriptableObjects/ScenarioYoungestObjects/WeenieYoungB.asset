@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1cd0c5ff6b3a643936ad724c3fdcbb, type: 3}
   m_Name: WeenieYoungB
   m_EditorClassIdentifier: 
-  weenieStatement: At least one of us is older than A
+  weenieStatement: At least one of us is younger than A
   isGuilty: 1

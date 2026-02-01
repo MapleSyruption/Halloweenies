@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 277581892648911662, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146105766389913605, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2320643582717098491, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_RootOrder
@@ -77,12 +87,47 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 36.98
       objectReference: {fileID: 0}
+    - target: {fileID: 3061131625908407143, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3319844227763468101, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3454357969554123250, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491673162402757866, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597912976987752185, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3681221393823052714, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439166911293598267, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121001866042976856, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3454357969554123250, guid: aeab0cc1153b35748854f609b9ee7694,
+    - target: {fileID: 6128232586848621193, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -92,10 +137,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scenario Criminal Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6785223442780585424, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6871701383367196827, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7973490829636072739, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8598395821082648718, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960748421119137559, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9171729396664427107, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeab0cc1153b35748854f609b9ee7694, type: 3}

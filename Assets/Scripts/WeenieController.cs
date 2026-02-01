@@ -17,6 +17,7 @@ public class WeenieController : MonoBehaviour
     private AudioSource aSource;
     public AudioClip clipGood;
     public AudioClip clipBad;
+    public Sprite choseHandSprite;
 
     //Parameters
 
@@ -39,6 +40,7 @@ public class WeenieController : MonoBehaviour
 
     public void SelectWeenie()
     {
+        hoverHand.GetComponent<SpriteRenderer>().sprite = choseHandSprite;
         if(info.isGuilty)
         {
             aSource.clip = clipGood;

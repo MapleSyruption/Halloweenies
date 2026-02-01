@@ -108,10 +108,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5093581013910255162, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -222.28087
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093581013910255162, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -243.0155
+      objectReference: {fileID: 0}
     - target: {fileID: 5147012481010314225, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652867612776241755, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5688679528919429268, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
@@ -144,6 +159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Youngest Scenario Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715296379185066036, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6414746
       objectReference: {fileID: 0}
     - target: {fileID: 6871701383367196827, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}

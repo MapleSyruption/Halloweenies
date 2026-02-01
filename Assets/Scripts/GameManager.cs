@@ -85,7 +85,8 @@ public class GameManager : MonoBehaviour
         }
 
         //wait for user input
-        yield return new WaitUntil(() => Input.anyKey);
+
+        // yield return new WaitUntil(() => Input.anyKey);
 
         //Back to menu
         SceneManager.LoadScene(0);
