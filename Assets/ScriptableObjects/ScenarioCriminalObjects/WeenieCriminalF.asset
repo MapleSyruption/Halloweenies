@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1cd0c5ff6b3a643936ad724c3fdcbb, type: 3}
   m_Name: WeenieCriminalF
   m_EditorClassIdentifier: Assembly-CSharp::WeenieInfo
-  weenieStatement: One day I'll catch up to A's kill count
+  weenieStatement: One day I'll catch up to A's kill count once I'm un-grounded
   isGuilty: 0
