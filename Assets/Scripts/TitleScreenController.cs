@@ -6,9 +6,21 @@ using TMPro;
 
 public class TitleScreenController : MonoBehaviour
 {
+    public Animator titleScreenAnimator;
+    public bool actuallyStartGame;
     public void StartGame()
     {
-
-        SceneManager.LoadScene(1);
+        titleScreenAnimator.SetTrigger("Start Game");
     }
+
+    private void Update()
+    {
+        if (actuallyStartGame)
+        {
+            SceneManager.LoadScene(1);
+
+            actuallyStartGame = false;
+        }
+    }
+
 }

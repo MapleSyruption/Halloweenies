@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1530342408494198051, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2126207660884255103, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,6 +82,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3319844227763468101, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3436934058389478834, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: info
@@ -88,6 +98,11 @@ PrefabInstance:
       propertyPath: speechBubbleTail
       value: 
       objectReference: {fileID: 514810073741022771}
+    - target: {fileID: 3454357969554123250, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4590237499729761433, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}
       propertyPath: m_IsActive
@@ -129,6 +144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Youngest Scenario Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871701383367196827, guid: aeab0cc1153b35748854f609b9ee7694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7441297192005349359, guid: aeab0cc1153b35748854f609b9ee7694,
         type: 3}

@@ -55,8 +55,8 @@ MonoBehaviour:
   speechBubbleTail: {fileID: 0}
   hoverHand: {fileID: 3918461875768484510}
   mask: {fileID: 3454863068046935541}
-  clipGood: {fileID: 0}
-  clipBad: {fileID: 0}
+  clipGood: {fileID: 8300000, guid: 3c7fc4f6f456ee344aad9a809ffebc79, type: 3}
+  clipBad: {fileID: 8300000, guid: aedd1123f86a01e4fa511e88b7d36519, type: 3}
 --- !u!82 &955484468135922174
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68,7 +68,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -488,6 +488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Costumes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836625601587092392, guid: 68c5d2bcbfd50f54eb663bd4bd765b99,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8894926878680913185, guid: 68c5d2bcbfd50f54eb663bd4bd765b99,
         type: 3}
