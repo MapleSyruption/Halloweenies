@@ -16,6 +16,8 @@ public class Hoverer : MonoBehaviour
     {
         HitScan();
 
+        Debug.Log("Hovering: " + hovered);
+
         if(lastHovered != hovered)
         {
             hovered.GetComponent<WeenieController>()?.SetHoverStatus(true);
@@ -47,5 +49,7 @@ public class Hoverer : MonoBehaviour
         {
             hovered = null;
         }
+
+        Debug.DrawRay(r.origin, r.direction * 100, Color.yellow, 1f);
     }
 }

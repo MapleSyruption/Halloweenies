@@ -39,6 +39,7 @@ public class WeenieController : MonoBehaviour
 
     public void SelectWeenie()
     {
+        Debug.Log("Weenie down");
         if(info.isGuilty)
         {
             aSource.clip = clipGood;

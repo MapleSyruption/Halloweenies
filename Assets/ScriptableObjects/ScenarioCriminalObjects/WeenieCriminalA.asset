@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1cd0c5ff6b3a643936ad724c3fdcbb, type: 3}
   m_Name: WeenieCriminalA
   m_EditorClassIdentifier: Assembly-CSharp::WeenieInfo
-  weenieStatement: E is too much of a weenie to kill
+  weenieStatement: E doesn't have the guts to kill. What a weenie...
   isGuilty: 0
